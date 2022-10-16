@@ -33,6 +33,6 @@ app.use('/api',require('./routes/role'));
 
 app.use("/api-doc",swaggerUI.serve,swaggerUI.setup(swaggerJsDoc(swaggerSpec)));
 
-app.listen(5000, ()=>{
-    console.log(`Servidor corriendo en el puerto 5000`);
+app.listen(process.env.PORT, ()=>{
+    console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);
 })
