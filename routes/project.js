@@ -49,10 +49,10 @@ router.get("/project", getProjects);
  *           - date
  *           - technicalSkills
  *       example:
- *           name: Gestion de parqueos UTB
- *           description: Se necesita crear una app para dar solucion a un problema con el parqueo en la UTB.
+ *           name: Gestion de proyectos UTB
+ *           description: Se necesita crear una app para dar solucion a la gestion de los proyectos de la UTB.
  *           date: 1665889805573
- *           technicalSkills: Se necesitan ingerieron en sistemas, ya que será una app.
+ *           technicalSkills: Se necesitan ingenieros en sistemas, ya que será una app.
  */
 
 /**
