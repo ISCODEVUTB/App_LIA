@@ -7,7 +7,7 @@ const {getRoles,createRole,updateRole,deleteRole,findRole, assignRole} = require
 
 /**
  * @swagger
- * /api/role:
+ * /role:
  *  get:
  *    summary: return all roles
  *    tags: [Role]
@@ -46,7 +46,7 @@ router.get("/role", getRoles);
 
 /**
  * @swagger
- * /api/role:
+ * /role:
  *  post:
  *    summary: create a new role
  *    tags: [Role]
@@ -74,7 +74,7 @@ router.post('/role',
 
 /**
  * @swagger
- * /api/role/{id}:
+ * /role/{id}:
  *  get:
  *    summary: return a role
  *    tags: [Role]
@@ -103,7 +103,7 @@ router.get("/role/:id",findRole);
 
 /**
  * @swagger
- * /api/role/{id}:
+ * /role/{id}:
  *  put:
  *    summary: update a role
  *    tags: [Role]
@@ -136,7 +136,7 @@ router.put("/role/:id",updateRole);
 
 /**
  * @swagger
- * /api/role/{id}:
+ * /role/{id}:
  *  delete:
  *    summary: delete a role
  *    tags: [Role]
@@ -160,7 +160,7 @@ router.delete("/role/:id",deleteRole);
 
 /**
  * @swagger
- * /api/staff-role/{id}:
+ * /role-staff/{id}:
  *  put:
  *    summary: assign a role
  *    tags: [Role]

@@ -16,7 +16,7 @@ const swaggerSpec = {
         },
         servers:[
             {
-                url:"https://gestiondeproyectosswagger.herokuapp.com"
+                url:"http://localhost:5000/"
             }
         ]
     },
@@ -27,9 +27,10 @@ dbConnection();
 
 app.use(express.json());
 
-app.use('/api',require('./routes/project'));
-app.use('/api',require('./routes/staff'));
-app.use('/api',require('./routes/role'));
+app.use('/',require('./routes/project'));
+app.use('/',require('./routes/staff'));
+app.use('/',require('./routes/role'));
+app.use('/',require('./routes/materialDonation'));
 
 app.use("/api-doc",swaggerUI.serve,swaggerUI.setup(swaggerJsDoc(swaggerSpec)));
 

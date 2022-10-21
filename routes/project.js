@@ -8,7 +8,7 @@ const {getProjects,createProject,updateProject,deleteProject,findProject} = requ
 
 /**
  * @swagger
- * /api/project:
+ * /project:
  *  get:
  *    summary: return all projects
  *    tags: [Project]
@@ -57,7 +57,7 @@ router.get("/project", getProjects);
 
 /**
  * @swagger
- * /api/project:
+ * /project:
  *  post:
  *    summary: create a new project
  *    tags: [Project]
@@ -87,7 +87,7 @@ router.post('/project',
 
 /**
  * @swagger
- * /api/project/{id}:
+ * /project/{id}:
  *  get:
  *    summary: return a project
  *    tags: [Project]
@@ -116,7 +116,7 @@ router.get("/project/:id",findProject);
 
 /**
  * @swagger
- * /api/project/{id}:
+ * /project/{id}:
  *  put:
  *    summary: update a project
  *    tags: [Project]
@@ -149,7 +149,7 @@ router.put("/project/:id",updateProject);
 
 /**
  * @swagger
- * /api/project/{id}:
+ * /project/{id}:
  *  delete:
  *    summary: delete a project
  *    tags: [Project]

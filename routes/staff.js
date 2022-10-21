@@ -7,7 +7,7 @@ const {getStaff,createStaff,updateStaff,deleteStaff,findStaff, assignProject} = 
 
 /**
  * @swagger
- * /api/staff:
+ * /staff:
  *  get:
  *    summary: return all staff
  *    tags: [Staff]
@@ -59,7 +59,7 @@ router.get("/staff", getStaff);
 
 /**
  * @swagger
- * /api/staff:
+ * /staff:
  *  post:
  *    summary: create a new staff
  *    tags: [Staff]
@@ -86,7 +86,7 @@ router.post('/staff',
 
 /**
  * @swagger
- * /api/staff/{id}:
+ * /staff/{id}:
  *  get:
  *    summary: return a staff
  *    tags: [Staff]
@@ -115,7 +115,7 @@ router.get("/staff/:id",findStaff);
 
 /**
  * @swagger
- * /api/staff/{id}:
+ * /staff/{id}:
  *  put:
  *    summary: update a staff
  *    tags: [Staff]
@@ -148,7 +148,7 @@ router.put("/staff/:id",updateStaff);
 
 /**
  * @swagger
- * /api/staff/{id}:
+ * /staff/{id}:
  *  delete:
  *    summary: delete a staff
  *    tags: [Staff]
@@ -171,7 +171,7 @@ router.delete("/staff/:id",deleteStaff);
 
 /**
  * @swagger
- * /api/staff-project/{id}:
+ * /staff-project/{id}:
  *  put:
  *    summary: assign a project
  *    tags: [Project]
